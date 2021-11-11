@@ -2,6 +2,7 @@
 #include "surgeon.h"
 #include "patient.h"
 #include "knife.h"
+#include "forceps.h"
 
 using namespace std;
 
