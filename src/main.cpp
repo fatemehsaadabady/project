@@ -1,6 +1,7 @@
 #include <iostream>
 #include "surgeon.h"
 #include "patient.h"
+#include "knife.h"
 
 using namespace std;
 

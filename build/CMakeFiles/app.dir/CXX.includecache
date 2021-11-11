@@ -11,6 +11,10 @@ iostream
 -
 surgeon.h
 /mnt/c/Users/bita/project/src/surgeon.h
+patient.h
+/mnt/c/Users/bita/project/src/patient.h
+knife.h
+/mnt/c/Users/bita/project/src/knife.h
 
 /mnt/c/Users/bita/project/src/surgeon.h
 iostream
