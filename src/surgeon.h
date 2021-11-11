@@ -12,8 +12,8 @@ class surgeon                              // کلاس جراح
           void set_lastname(string);               // تابع گرفتن فامیلی جراح
           void set_age(int);                      // تابع گرفتن سن جراح
           void set_Personnel_code(long int);       // تابع گرفتن کد پرسنلی
-          string get_name();
-          string get_lastname();
+          string get_name()const;
+          string get_lastname()const;
           bool get_age();
           long int get_Personnel_code;
 
