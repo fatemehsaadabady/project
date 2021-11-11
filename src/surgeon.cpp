@@ -3,7 +3,7 @@
 
 using namespace std;
 
-surgeon::surgeon(string name, string lastname, int age, long int Personnel_code)
+surgeon::surgeon(string name, string lastname, int age, long int Personnel_code) // کانستراکتور
 {
      set_name(name);
      set_lastname(lastname);
@@ -12,7 +12,7 @@ surgeon::surgeon(string name, string lastname, int age, long int Personnel_code)
 
 }
 
-void surgeon::set_name(string n)
+void surgeon::set_name(string n)   // توابع ست و گت
 {
      name = n;
 }
