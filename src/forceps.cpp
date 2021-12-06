@@ -3,17 +3,15 @@
 
 using namespace std;
 
-forceps::forceps(string name, forceps_size(medium))             // کانستراکتور
-{
-     set_name(name);
+forceps::forceps(string name, int price, int size) : tool(name, price, size)
+
 }
 
-void forceps::set_name(string n)                     // توابع ست و گت
+void forceps::print() const
 {
-     name = n;
-}
-
-string forceps::get_name()
-{
-     return name;
+     cout << "------------" << endl;
+     cout << "forceps:" << endl;
+     cout << "name: " << get_name() << endl;
+     cout << "price: " << get_price() << endl;
+     cout << "------------" << endl;
 }

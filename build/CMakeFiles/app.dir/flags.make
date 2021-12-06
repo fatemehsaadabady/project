@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/c/Users/bita/project/include 
+CXX_INCLUDES = -I/mnt/c/Users/Youz.A.T/Desktop/project/include 
 

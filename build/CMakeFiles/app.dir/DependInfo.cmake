@@ -4,7 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/c/Users/bita/project/src/main.cpp" "/mnt/c/Users/bita/project/build/CMakeFiles/app.dir/src/main.cpp.o"
+  "/mnt/c/Users/Youz.A.T/Desktop/project/src/forceps.cpp" "/mnt/c/Users/Youz.A.T/Desktop/project/build/CMakeFiles/app.dir/src/forceps.cpp.o"
+  "/mnt/c/Users/Youz.A.T/Desktop/project/src/knife.cpp" "/mnt/c/Users/Youz.A.T/Desktop/project/build/CMakeFiles/app.dir/src/knife.cpp.o"
+  "/mnt/c/Users/Youz.A.T/Desktop/project/src/main.cpp" "/mnt/c/Users/Youz.A.T/Desktop/project/build/CMakeFiles/app.dir/src/main.cpp.o"
+  "/mnt/c/Users/Youz.A.T/Desktop/project/src/patient.cpp" "/mnt/c/Users/Youz.A.T/Desktop/project/build/CMakeFiles/app.dir/src/patient.cpp.o"
+  "/mnt/c/Users/Youz.A.T/Desktop/project/src/surgeon.cpp" "/mnt/c/Users/Youz.A.T/Desktop/project/build/CMakeFiles/app.dir/src/surgeon.cpp.o"
+  "/mnt/c/Users/Youz.A.T/Desktop/project/src/tool.cpp" "/mnt/c/Users/Youz.A.T/Desktop/project/build/CMakeFiles/app.dir/src/tool.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

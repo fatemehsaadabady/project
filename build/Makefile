@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/bita/project
+CMAKE_SOURCE_DIR = /mnt/c/Users/Youz.A.T/Desktop/project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/bita/project/build
+CMAKE_BINARY_DIR = /mnt/c/Users/Youz.A.T/Desktop/project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/bita/project/build/CMakeFiles /mnt/c/Users/bita/project/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Youz.A.T/Desktop/project/build/CMakeFiles /mnt/c/Users/Youz.A.T/Desktop/project/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/bita/project/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Youz.A.T/Desktop/project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,60 @@ app/fast:
 	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
 .PHONY : app/fast
 
+src/forceps.o: src/forceps.cpp.o
+
+.PHONY : src/forceps.o
+
+# target to build an object file
+src/forceps.cpp.o:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/forceps.cpp.o
+.PHONY : src/forceps.cpp.o
+
+src/forceps.i: src/forceps.cpp.i
+
+.PHONY : src/forceps.i
+
+# target to preprocess a source file
+src/forceps.cpp.i:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/forceps.cpp.i
+.PHONY : src/forceps.cpp.i
+
+src/forceps.s: src/forceps.cpp.s
+
+.PHONY : src/forceps.s
+
+# target to generate assembly for a file
+src/forceps.cpp.s:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/forceps.cpp.s
+.PHONY : src/forceps.cpp.s
+
+src/knife.o: src/knife.cpp.o
+
+.PHONY : src/knife.o
+
+# target to build an object file
+src/knife.cpp.o:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/knife.cpp.o
+.PHONY : src/knife.cpp.o
+
+src/knife.i: src/knife.cpp.i
+
+.PHONY : src/knife.i
+
+# target to preprocess a source file
+src/knife.cpp.i:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/knife.cpp.i
+.PHONY : src/knife.cpp.i
+
+src/knife.s: src/knife.cpp.s
+
+.PHONY : src/knife.s
+
+# target to generate assembly for a file
+src/knife.cpp.s:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/knife.cpp.s
+.PHONY : src/knife.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -150,6 +204,87 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/patient.o: src/patient.cpp.o
+
+.PHONY : src/patient.o
+
+# target to build an object file
+src/patient.cpp.o:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/patient.cpp.o
+.PHONY : src/patient.cpp.o
+
+src/patient.i: src/patient.cpp.i
+
+.PHONY : src/patient.i
+
+# target to preprocess a source file
+src/patient.cpp.i:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/patient.cpp.i
+.PHONY : src/patient.cpp.i
+
+src/patient.s: src/patient.cpp.s
+
+.PHONY : src/patient.s
+
+# target to generate assembly for a file
+src/patient.cpp.s:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/patient.cpp.s
+.PHONY : src/patient.cpp.s
+
+src/surgeon.o: src/surgeon.cpp.o
+
+.PHONY : src/surgeon.o
+
+# target to build an object file
+src/surgeon.cpp.o:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/surgeon.cpp.o
+.PHONY : src/surgeon.cpp.o
+
+src/surgeon.i: src/surgeon.cpp.i
+
+.PHONY : src/surgeon.i
+
+# target to preprocess a source file
+src/surgeon.cpp.i:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/surgeon.cpp.i
+.PHONY : src/surgeon.cpp.i
+
+src/surgeon.s: src/surgeon.cpp.s
+
+.PHONY : src/surgeon.s
+
+# target to generate assembly for a file
+src/surgeon.cpp.s:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/surgeon.cpp.s
+.PHONY : src/surgeon.cpp.s
+
+src/tool.o: src/tool.cpp.o
+
+.PHONY : src/tool.o
+
+# target to build an object file
+src/tool.cpp.o:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/tool.cpp.o
+.PHONY : src/tool.cpp.o
+
+src/tool.i: src/tool.cpp.i
+
+.PHONY : src/tool.i
+
+# target to preprocess a source file
+src/tool.cpp.i:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/tool.cpp.i
+.PHONY : src/tool.cpp.i
+
+src/tool.s: src/tool.cpp.s
+
+.PHONY : src/tool.s
+
+# target to generate assembly for a file
+src/tool.cpp.s:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/tool.cpp.s
+.PHONY : src/tool.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +294,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... app"
+	@echo "... src/forceps.o"
+	@echo "... src/forceps.i"
+	@echo "... src/forceps.s"
+	@echo "... src/knife.o"
+	@echo "... src/knife.i"
+	@echo "... src/knife.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/patient.o"
+	@echo "... src/patient.i"
+	@echo "... src/patient.s"
+	@echo "... src/surgeon.o"
+	@echo "... src/surgeon.i"
+	@echo "... src/surgeon.s"
+	@echo "... src/tool.o"
+	@echo "... src/tool.i"
+	@echo "... src/tool.s"
 .PHONY : help
 
 

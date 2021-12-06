@@ -6,4 +6,4 @@ cmake_minimum_required(VERSION 3.0)
 
 include_directories(include/)
 
-add_executable(app src/main.cpp )
+add_executable(app src/main.cpp src/surgeon.cpp src/patient.cpp src/tool.cpp src/forceps.cpp src/knife.cpp)
