@@ -1,24 +1,19 @@
-#include <iostream>
 #ifndef knife_h
 #define knife_h
+#include <iostream>
 #include "tool.h"
-
 using namespace std;
 
-enum size{little, medium, big};                //  برای استفاده سایز ابزار جراحی(کوچک، متوسط، بزرگ)
-enum sharpness{sharp, normal, blunt};           // برای مشخص کردن میزان تیزی چاقو(تیز، معمولی، کند)
-
-class knife : public tool                                         // کلاس چاقو
+class knife : public tool                                                      // کلاس چاقو که از کلاس ابزار ارث می برد
 {
      public:
-          knife(string name, knife_size(little), knife_sharpness(sharp));                                      // کانستراکتور
-          void set_name(string);                               // تابع گرفتن اسم چاقو
-          string get_name();
+          enum sharpness{sharp = 1, normal, blunt};                             // برای مشخص کردن میزان تیزی چاقو(تیز، معمولی، کند)
+          knife(string name1, int price1, int size1, int sharpness1);                    // کانستراکتور
+          void set_sharpness(int sharpness1);                                           // تابع ست میزان تیزی
+          sharpness get_sharpness() const;                                              // تابع گت میزان تیزی 
+          virtual void print() const override;                                          // تابع پرینت
 
      private:
-          string name;                                 // اسم چاقو
-          const size knife_size;                        // سایز چاقو
-          const sharpness knife_sharpness;               // میزان تیزی چاقو
-
+          sharpness knife_sharpness;                                                    // میزان تیزی چاقو
 };
 #endif

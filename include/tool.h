@@ -1,29 +1,31 @@
-#include <iostream>
 #ifndef tool_h
 #define tool_h
-
+#include <iostream>
 using namespace std;
 
-class tool                                       // کلاس ابزار                                               
+class tool                                                                    // کلاس ابزار
 {
-     public:
-          tool(string name, int price, int size1);  
-          enum size{little, medium, big};                //  برای استفاده سایز ابزار جراحی(کوچک، متوسط، بزرگ)                              
-          void set_name(string);            
-          void set_price(int);
-          void set_size(int);
-          virtual void print() const = 0;
-          int get_price() const;
-          string get_name() const;
-          enum size get_size() const;
-          bool operator>(const tool & t);
-          bool operator<(const tool & t);
+     public: 
+          enum size                                                       //  برای استفاده سایز ابزار جراحی(کوچک، متوسط، بزرگ)
+          {
+               little = 1, medium, big
+          };
+          
+          tool(string name1, int price1, int size1);                     //کانستراکتور
+          void set_name(string name1);                                   // تابع ست اسم ابزار
+          void set_price(int price1);                                    // تابع ست قیمت ابزار
+          void set_size(int size1);                                      // تابع ست سایز ابزار
+          virtual void print() const = 0;                                // تابع پرینت
+          int get_price() const;                                         // تابع گت قیمت
+          string get_name() const;                                       // تابع گت اسم 
+          enum size get_size() const;                                    // تابع گت سایز
+          bool operator>(const tool &t) const;                           // مقایسه > بودن قیمت ابزارها
+          bool operator<(const tool &t) const;                           // مقایسه < بودن قیمت ابزارها
+          bool operator==(const tool &t) const;                          // مقایسه مساوی بودن قیمت ابزارها
 
      private:
-          string name;                             // متغیر اسم
-          int price;                              // قیمت           
-          size tool_size;                 // سایز            
-          
+          string name;                                                   // متغیر اسم
+          int price;                                                     // قیمت
+          size tool_size;                                                // سایز
 };
-
 #endif

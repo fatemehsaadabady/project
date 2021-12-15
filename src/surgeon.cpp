@@ -1,9 +1,8 @@
 #include <iostream>
 #include "surgeon.h"
-
 using namespace std;
 
-surgeon::surgeon(string name, string lastname, int age, long int Personnel_code) // کانستراکتور
+surgeon::surgeon(string name, string lastname, int age, long int Personnel_code)                   // کانستراکتور
 {
      set_name(name);
      set_lastname(lastname);
@@ -12,49 +11,53 @@ surgeon::surgeon(string name, string lastname, int age, long int Personnel_code)
 
 }
 
-void surgeon::set_name(string n)   // توابع ست و گت
+void surgeon::set_name(string name1)                                           // تابع ست اسم جراح
 {
-     name = n;
+     name = name1;
 }
 
-void surgeon::set_lastname(string l)
+void surgeon::set_lastname(string lastname1)                                  // تابع ست فامیلی جراح
 {
-     lastname = l;
+     lastname = lastname1;
 }
 
-void surgeon::set_age(int a)
+void surgeon::set_age(int age1)                                              // تابع ست سن جراح
 {
-     age = a;
+     age = age1;
 }
 
-void surgeon::set_Personnel_code(long int p)
+void surgeon::set_Personnel_code(long int personal_code1)                    // تابع ست کدپرسنلی جراح
 {
-     Personnel_code = p;
+     Personnel_code = personal_code1;
 }
 
-string surgeon::get_name()const
+string surgeon::get_name()const                                              // تابع گت اسم
 {
      return name;
 }
 
-string surgeon::get_lastname()const
+string surgeon::get_lastname()const                                          // تابع گت فامیلی
 {
      return lastname;
 }
 
-bool surgeon::get_age()
+int surgeon::get_age() const                                                  // تابع گت سن
 {
-     if((age < 20) || (age > 80))
-     {
-          return false;
-     }
-     else
-     {
-          return true;
-     }
+     return age;
 }
 
-long int surgeon::get_Personnel_code()
+long int surgeon::get_Personnel_code() const                                  // تابع گت کدپرسنلی
 {
      return Personnel_code;
+}
+
+void surgeon::print() const                                                                // تابع پرینت
+{
+     cout << "==================" << endl;
+     cout << "surgeon" << endl;
+     cout << "name: " << get_name() << endl;                                             // چاپ اسم
+     cout << "lastname: " << get_lastname() << endl;                                     // چاپ فامیلی
+     cout << "age: " << get_age() << endl;                                               // چاپ سن
+     cout << "Personnel_code: " << get_Personnel_code() << endl;                         // چاپ کد پرسنلی
+     cout << "==================" << endl;
 }
