@@ -8,19 +8,19 @@
 #include "forceps.h"
 using namespace std;
 
-void add_surgeons(vector <surgeon>&surgeons)
+void add_surgeons(vector <surgeon>&surgeons)                                       // تابع اضافه کردن اطلاعات جراح
 {
      surgeon s("ali", "kalami", 50, 673458);
      surgeons.push_back(s);
 }
 
-void add_patients(vector <patient>&patients)
+void add_patients(vector <patient>&patients)                                       // تابع اضافه کردن اطلاعات بیمار
 {
     patient p("amin", "farahani", 34, 006432);
     patients.push_back(p);
 }
 
-void add_tools(vector <tool*>&tools)
+void add_tools(vector <tool*>&tools)                                              // تابع اضافه کردن ابزار
 {
      cout << "pleas enter your tool , if you want choose knife enter 1 and if choose forceps enter 2" << endl;
      int choice;
@@ -51,12 +51,13 @@ void add_tools(vector <tool*>&tools)
 
 int main()
 {
-     vector <surgeon> surgeons;
-     vector <patient> patients;
-     vector <tool*> tools;
+     vector <surgeon> surgeons;                                                         // وکتور جراح
+     vector <patient> patients;                                                         // وکتور بیمار
+     vector <tool*> tools;                                                              // وکتور ابزار
 
      add_surgeons(surgeons);
      add_patients(patients);
+
      try
      {
           add_tools(tools);
