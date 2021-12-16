@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdexcept>
 #include "knife.h"
 using namespace std;
 
@@ -22,7 +23,7 @@ void knife::set_sharpness(int sharpness1)                                       
           break;
 
      default:
-          cout << "your command is not correct" << endl;
+          throw invalid_argument("your command is not correct!!");
           break;
      }
 }

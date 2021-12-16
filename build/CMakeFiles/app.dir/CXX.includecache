@@ -33,6 +33,10 @@ iostream
 /mnt/c/Users/bita/project/src/main.cpp
 iostream
 -
+stdexcept
+-
+vector
+-
 surgeon.h
 /mnt/c/Users/bita/project/src/surgeon.h
 patient.h
@@ -44,15 +48,11 @@ knife.h
 forceps.h
 /mnt/c/Users/bita/project/src/forceps.h
 
-/mnt/c/Users/bita/project/src/patient.cpp
+/mnt/c/Users/bita/project/src/tool.cpp
 iostream
 -
-patient.h
-/mnt/c/Users/bita/project/src/patient.h
-
-/mnt/c/Users/bita/project/src/surgeon.cpp
-iostream
+stdexcept
 -
-surgeon.h
-/mnt/c/Users/bita/project/src/surgeon.h
+tool.h
+/mnt/c/Users/bita/project/src/tool.h
 

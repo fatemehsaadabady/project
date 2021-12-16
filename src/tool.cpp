@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdexcept>
 #include "tool.h"
 using namespace std;
 
@@ -39,7 +40,7 @@ void tool::set_size(int size1)                                            // ØªØ
           break;
      }
      default:
-          cout << "your command is not correct" << endl;
+          throw invalid_argument("your command is not correct!!");
           break;
      }
 }
