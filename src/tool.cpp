@@ -40,7 +40,7 @@ void tool::set_size(int size1)                                            // ØªØ
           break;
      }
      default:
-          throw invalid_argument("your command is not correct!!");
+          cout << "your command is not correct!!" << endl;
           break;
      }
 }

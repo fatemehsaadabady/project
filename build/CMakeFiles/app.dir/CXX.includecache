@@ -6,47 +6,23 @@
 
 #IncludeRegexTransform: 
 
-../include/forceps.h
-iostream
--
-tool.h
-../include/tool.h
-
 ../include/knife.h
 iostream
 -
 tool.h
 ../include/tool.h
 
-../include/patient.h
-iostream
--
-
-../include/surgeon.h
-iostream
--
-
 ../include/tool.h
 iostream
 -
 
-/mnt/c/Users/bita/project/src/main.cpp
+/mnt/c/Users/bita/project/src/knife.cpp
 iostream
 -
 stdexcept
 -
-vector
--
-surgeon.h
-/mnt/c/Users/bita/project/src/surgeon.h
-patient.h
-/mnt/c/Users/bita/project/src/patient.h
-tool.h
-/mnt/c/Users/bita/project/src/tool.h
 knife.h
 /mnt/c/Users/bita/project/src/knife.h
-forceps.h
-/mnt/c/Users/bita/project/src/forceps.h
 
 /mnt/c/Users/bita/project/src/tool.cpp
 iostream

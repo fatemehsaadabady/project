@@ -10,12 +10,14 @@ using namespace std;
 
 void add_surgeons(vector <surgeon>&surgeons)
 {
-     
+     surgeon s("ali", "kalami", 50, 673458);
+     surgeons.push_back(s);
 }
 
 void add_patients(vector <patient>&patients)
 {
-    
+    patient p("amin", "farahani", 34, 006432);
+    patients.push_back(p);
 }
 
 void add_tools(vector <tool*>&tools)
@@ -55,7 +57,14 @@ int main()
 
      add_surgeons(surgeons);
      add_patients(patients);
-     add_tools(tools);
+     try
+     {
+          add_tools(tools);
+     }
+     catch(const exception &e)
+     {
+          cout << e.what() << endl;
+     }
 
      return 0;
 }

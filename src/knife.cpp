@@ -23,7 +23,7 @@ void knife::set_sharpness(int sharpness1)                                       
           break;
 
      default:
-          throw invalid_argument("your command is not correct!!");
+          cout << "your command is not correct!!" << endl;
           break;
      }
 }
