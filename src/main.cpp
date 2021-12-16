@@ -57,7 +57,6 @@ int main()
 
      add_surgeons(surgeons);
      add_patients(patients);
-
      try
      {
           add_tools(tools);
