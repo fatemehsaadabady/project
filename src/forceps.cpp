@@ -1,5 +1,5 @@
 #include <iostream>
-#include "forceps.h"
+#include "include/forceps.h"
 using namespace std;
 
 forceps::forceps(string name1, int price1, int size1) : tool(name1, price1, size1)             // کانستراکتور 

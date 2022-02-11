@@ -1,5 +1,5 @@
 #include <iostream>
-#include "patient.h"
+#include "include/patient.h"
 using namespace std;
 
 patient::patient(string name, string lastname, int age, long int file_number)                       // کانستراکتور

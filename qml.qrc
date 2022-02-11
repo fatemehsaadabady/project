@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>home.qml</file>
+        <file>files/surgeon.jpg</file>
+        <file>surgeon.qml</file>
+        <file>files/surgeon2.jpg</file>
+    </qresource>
+</RCC>
